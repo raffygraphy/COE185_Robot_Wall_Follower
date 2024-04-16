@@ -11,12 +11,18 @@
 #define LEFT_PIN DDD2   //DIG2
 #define RIGHT_PIN DDD4  //DIG4
 
-#define MAX_PWM 255   // Maximum PWM value
+#define MAX_PWM 220   // Maximum PWM value
 
 typedef enum {
   left_W,
   right_W
 } side_Wheel;
+
+typedef enum {
+  right_sight,
+  center_sight, 
+  mid_sight
+} ultrasonic_sight;
 
 typedef enum {
   high_value,
@@ -31,3 +37,4 @@ void configure_Motor(side_Wheel side_W, double powerFactor, direction_Value valu
 void stop();
 
 #endif
+

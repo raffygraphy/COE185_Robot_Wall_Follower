@@ -1,7 +1,6 @@
 #include "motor.h"
 
 void initMotorDirection() {
-
   // Set pins as output
   DDRD |= (1 << LEFT_PIN);   //D2
   DDRD |= (1 << RIGHT_PIN);  //D4
@@ -22,8 +21,6 @@ void init_Timer() {
 
   // Set prescaler to 1 (no prescaling)
   TCCR0B |= (1 << CS00);
-
-
   // Clear OC0A and OC0B on compare match, set at BOTTOM
   TCCR0A |= (1 << COM0A1) | (1 << COM0B1);
 }

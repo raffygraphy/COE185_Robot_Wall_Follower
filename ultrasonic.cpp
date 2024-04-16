@@ -2,14 +2,6 @@
 
 double distance = 0;
 
-// void setup() {
-//   Serial.begin(9600);
-//   initPWM();
-//   initUltraSonic();
-//   initLED();
-//   // sei();  // E
-// }
-
 void initPWM() {
   // MODE TIMER
   TCCR1B &= ~(1 << WGM13);
@@ -152,8 +144,6 @@ void triggerUltrasonicSensor() {
   // digitalWrite(trigPin, LOW);
   PORTB &= ~(1 << trigPin);
 
-  // Enable input capture interrupt
-  // TCCR1B |= (1 << ICES1) | (1 << ICNC1) | (1 << ICIE1);  // Capture rising edge, noise canceler enabled, enable input capture interrupt
 }
 
 
@@ -243,6 +233,6 @@ void right_To_Center() {
 double read_only_ULTRASONIC() {
   triggerUltrasonicSensor();
   distance = readEcho();
-  // Serial.println(distance);
+  Serial.println(distance);
   return distance;
 }

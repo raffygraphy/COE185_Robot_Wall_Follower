@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" modified="2024-04-15T01:35:03.001Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" etag="0BqLGcPCoLge5kXKy3X9" version="22.1.18" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="AYt_-RVkQ8dwDracrnl1-0" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="310" y="60" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AYt_-RVkQ8dwDracrnl1-1" value="Setup Arduino Peripherals&lt;br&gt;Initialize Variables&amp;nbsp;and Constants&lt;br&gt;&lt;div&gt;initPWM();&lt;/div&gt;&lt;div&gt;&amp;nbsp; initUltraSonic();&lt;/div&gt;&lt;div&gt;&amp;nbsp; initLED();&lt;/div&gt;&lt;div&gt;&amp;nbsp; initMotorDirection();&lt;/div&gt;&lt;div&gt;&amp;nbsp; initPWMsignal();&lt;/div&gt;&lt;div&gt;&amp;nbsp; init_Timer();&lt;/div&gt;&lt;div&gt;&amp;nbsp; initServos();&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="243.75" y="150" width="232.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="AYt_-RVkQ8dwDracrnl1-2" value="read_only_ULTRASONIC();" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="250" y="320" width="218" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AYt_-RVkQ8dwDracrnl1-3" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="309" y="420" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AYt_-RVkQ8dwDracrnl1-4" value="pause();&lt;br&gt;&lt;div&gt;&amp;nbsp;moveForward();&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp;swivelMeasurement(right_View);&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="450" y="441.75" width="180" height="56.5" as="geometry" />
+        </mxCell>
+        <mxCell id="AYt_-RVkQ8dwDracrnl1-7" value="wall_follow(percentSpeed, maintainDistance, right_W);" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="210" y="630" width="316" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AYt_-RVkQ8dwDracrnl1-8" value="swivelMeasurement(mid_view);" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="270" y="565" width="182" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
